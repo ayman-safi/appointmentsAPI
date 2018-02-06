@@ -48,7 +48,7 @@ namespace AppointmentsAPI.Business.Services.Concrete
         {
             try
             {
-                var appointments = await _appointmentDataService.GetCurrentAppointments();
+                var appointments = await _appointmentDataService.GetAppointments();
                 return _mapper.Map<List<AppointmentProjection>>(appointments);
             }
             catch (Exception ex)

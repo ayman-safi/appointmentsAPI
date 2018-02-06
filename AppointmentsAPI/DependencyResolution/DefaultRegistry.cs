@@ -8,7 +8,6 @@ using AppointmentsAPI.Models.Projections;
 using AutoMapper;
 using StructureMap;
 using StructureMap.Graph;
-using System;
 
 namespace AppointmentsAPI.DependencyResolution
 {
@@ -24,8 +23,8 @@ namespace AppointmentsAPI.DependencyResolution
 
             var mapperConfig = new MapperConfiguration(cfg =>
             {
-                cfg.CreateMap<Appointment, AppointmentProjection>().ForMember(dest => dest.AppointmentDate, opt => opt.MapFrom(src => DateTime.Parse(src.AppointmentDate)));
-                cfg.CreateMap<AppointmentProjection, Appointment>().ForMember(dest => dest.AppointmentDate, opt => opt.MapFrom(src => src.AppointmentDate.ToString()));
+                cfg.CreateMap<Appointment, AppointmentProjection>();//.ForMember(dest => dest.EstablishedPatient, opt => opt.MapFrom(src => src.EstablishedPatient == 0 ? false : true));
+                cfg.CreateMap<AppointmentProjection, Appointment>();//.ForMember(dest => dest.EstablishedPatient, opt => opt.MapFrom(src => src.EstablishedPatient ? 1 : 0));
             });
 
             var mapper = mapperConfig.CreateMapper();

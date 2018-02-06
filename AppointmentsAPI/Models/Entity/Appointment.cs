@@ -9,11 +9,11 @@ namespace AppointmentsAPI.Models.Entity
         public string LastName { get; set; }
         public string Email { get; set; }
         public string Reason { get; set; }
-        public string AppointmentDate { get; set; }
+        public DateTime AppointmentDate { get; set; }
         public string AppointmentTime { get; set; }
         public string Gender { get; set; }
         public string ContactNumber { get; set; }
-        public bool EstablishedPatient { get; set; }
+        public int EstablishedPatient { get; set; }
         public string InsuranceOption { get; set; }
     }
 }

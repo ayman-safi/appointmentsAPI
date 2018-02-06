@@ -218,6 +218,7 @@
     <Compile Include="Business.Data\Maps\AppointmentMap.cs" />
     <Compile Include="Business.Services\Concrete\AppointmentService.cs" />
     <Compile Include="Business.Services\Contracts\IAppointmentService.cs" />
+    <Compile Include="Controllers\AppointmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DependencyResolution\DefaultRegistry.cs" />

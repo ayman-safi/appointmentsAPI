@@ -6,7 +6,7 @@ namespace AppointmentsAPI.Business.Data.Contracts
 {
     public interface IAppointmentDataService
     {
-        Task<List<Appointment>> GetCurrentAppointments();
+        Task<List<Appointment>> GetAppointments();
 
         Task<Appointment> CreateAppointment(Appointment appointment);
     }

@@ -41,16 +41,16 @@ namespace AppointmentsAPI.Business.Data.Concrete
             }
         }
 
-        public async Task<List<Appointment>> GetCurrentAppointments()
+        public async Task<List<Appointment>> GetAppointments()
         {
             try
             {
-                var appointments = await _context.Set<Appointment>().Where(t => DateTime.Parse(t.AppointmentDate) > DateTime.Now).ToListAsync();
+                var appointments = await _context.Set<Appointment>().Where(x => true).ToListAsync();
                 return appointments;
             }
             catch (Exception ex)
             {
-                Trace.Write(ex, nameof(GetCurrentAppointments));
+                Trace.Write(ex, nameof(GetAppointments));
                 throw;
             }
         }

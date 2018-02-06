@@ -66,3 +66,4 @@ C:\Users\faziz\source\repos\AppointmentsAPI\AppointmentsAPI\bin\Microsoft.AI.Win
 C:\Users\faziz\source\repos\AppointmentsAPI\AppointmentsAPI\bin\Microsoft.AI.Web.xml
 C:\Users\faziz\source\repos\AppointmentsAPI\AppointmentsAPI\obj\Debug\AppointmentsAPI.dll
 C:\Users\faziz\source\repos\AppointmentsAPI\AppointmentsAPI\obj\Debug\AppointmentsAPI.pdb
+C:\Users\faziz\source\repos\AppointmentsAPI\AppointmentsAPI\obj\Debug\AppointmentsAPI.csprojResolveAssemblyReference.cache
